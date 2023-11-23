@@ -64,13 +64,13 @@ class _MyHomePageState extends State<MyHomePage> {
                       child: Row(
                         children: [
                           IconButton(
-                            onPressed: () => Database.update(
-                                snapshot.data!.docs[index], context),
+                            onPressed: () =>
+                                Database.update(documentSnapshot, context),
                             icon: const Icon(Icons.edit),
                           ),
                           IconButton(
-                            onPressed: () => Database.delete(
-                                snapshot.data!.docs[index], context),
+                            onPressed: () =>
+                                Database.delete(documentSnapshot, context),
                             icon: const Icon(Icons.delete),
                           ),
                         ],
